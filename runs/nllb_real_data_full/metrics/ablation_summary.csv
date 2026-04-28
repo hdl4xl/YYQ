@@ -1,0 +1,5 @@
+﻿setting,removed_component,source_model,BLEU,chrF,TER,TA,TCR
+Full method,None,Ours_entity_aware_domain_adapted,11.6486,40.1288,97.7185,99.7366,99.8148
+w/o entity enhancement,Entity tags / entity-aware input,B2_domain_adapted,7.9401,33.2285,98.396,38.4548,40.0
+w/o domain adaptation,LoRA domain adaptation,B3_entity_aware,8.6157,36.1553,88.2882,92.4495,92.4074
+w/o terminology normalization,Terminology normalization post-processing,Ours_entity_aware_domain_adapted,12.0557,38.7463,96.1007,81.3872,82.1296

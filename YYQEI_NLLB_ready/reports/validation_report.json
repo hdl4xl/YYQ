@@ -1,0 +1,42 @@
+{
+  "split_counts": {
+    "train": 906,
+    "dev": 242,
+    "test": 249
+  },
+  "total_rows": 1397,
+  "missing_values": {},
+  "duplicate_id_rows": 0,
+  "duplicate_zh_rows": 0,
+  "duplicate_en_rows": 0,
+  "duplicate_pair_rows": 0,
+  "duplicate_zh_norm_rows": 0,
+  "duplicate_en_norm_rows": 0,
+  "entity_errors": [],
+  "entity_mentions": 5544,
+  "unique_terms": 315,
+  "known_bad_en_rows": [],
+  "ascii_period_zh_rows": [],
+  "term_coverage_missing": [],
+  "term_extra_not_in_entities": [],
+  "bio_spans_rows": 1397,
+  "bio_char_full_rows": 54351,
+  "bio_ids_missing": [],
+  "bio_char_ids_missing": [],
+  "bio_span_errors": [],
+  "bio_char_reconstruction_errors": [],
+  "text_type_counts": {
+    "five_element_theory_sentence": 11,
+    "treatment_principle_sentence": 100,
+    "organ_function_sentence": 233,
+    "organ_relationship_sentence": 72,
+    "concept_definition": 31,
+    "syndrome_sentence": 210,
+    "pathogenesis_sentence": 208,
+    "diagnostic_sentence": 288,
+    "qi_blood_body_fluid_sentence": 56,
+    "meridian_sentence": 27,
+    "etiology_sentence": 158,
+    "yin_yang_theory_sentence": 3
+  }
+}

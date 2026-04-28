@@ -1,0 +1,54 @@
+﻿{
+  "success": true,
+  "summaries": [
+    {
+      "model_id": "B1_general_translation",
+      "n": 249,
+      "BLEU": 6.4683,
+      "chrF": 30.6957,
+      "TER": 90.9983,
+      "TA": 28.1826,
+      "TCR": 29.0741,
+      "raw_TA": 28.1826,
+      "raw_TCR": 29.0741,
+      "normalization_used": "False"
+    },
+    {
+      "model_id": "B2_domain_adapted",
+      "n": 249,
+      "BLEU": 7.9401,
+      "chrF": 33.2285,
+      "TER": 98.396,
+      "TA": 38.4548,
+      "TCR": 40.0,
+      "raw_TA": 38.4548,
+      "raw_TCR": 40.0,
+      "normalization_used": "False"
+    },
+    {
+      "model_id": "B3_entity_aware",
+      "n": 249,
+      "BLEU": 8.6157,
+      "chrF": 36.1553,
+      "TER": 88.2882,
+      "TA": 92.4495,
+      "TCR": 92.4074,
+      "raw_TA": 92.4495,
+      "raw_TCR": 92.4074,
+      "normalization_used": "False"
+    },
+    {
+      "model_id": "Ours_entity_aware_domain_adapted",
+      "n": 249,
+      "BLEU": 11.6486,
+      "chrF": 40.1288,
+      "TER": 97.7185,
+      "TA": 99.7366,
+      "TCR": 99.8148,
+      "raw_TA": 81.3872,
+      "raw_TCR": 82.1296,
+      "normalization_used": "True"
+    }
+  ],
+  "metrics_path": "D:\\Desktop\\YYQEI\\runs\\nllb_real_data_full\\metrics\\metrics_summary.csv"
+}

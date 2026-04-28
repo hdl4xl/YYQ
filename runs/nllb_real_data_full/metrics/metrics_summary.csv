@@ -1,0 +1,5 @@
+﻿model_id,n,BLEU,chrF,TER,TA,TCR,raw_TA,raw_TCR,normalization_used
+B1_general_translation,249,6.4683,30.6957,90.9983,28.1826,29.0741,28.1826,29.0741,False
+B2_domain_adapted,249,7.9401,33.2285,98.396,38.4548,40.0,38.4548,40.0,False
+B3_entity_aware,249,8.6157,36.1553,88.2882,92.4495,92.4074,92.4495,92.4074,False
+Ours_entity_aware_domain_adapted,249,11.6486,40.1288,97.7185,99.7366,99.8148,81.3872,82.1296,True

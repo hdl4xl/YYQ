@@ -1,0 +1,69 @@
+# Large/source artifacts not suitable for GitHub
+*.pdf
+*.zip
+*.pt
+*.pth
+*.safetensors
+*.bin
+*.model
+*.spm
+*.bpe.model
+tokenizer.json
+optimizer.pt
+scheduler.pt
+scaler.pt
+rng_state.pth
+training_args.bin
+
+# Local/generated caches
+__pycache__/
+*.pyc
+.cache/
+.pytest_cache/
+
+# Original/synthetic intermediate materials
+generated_materials/
+YYQEI_Materials_cleaned/
+runs/*
+
+# Keep final real-data experiment outputs, excluding model weights/checkpoints.
+!runs/
+!runs/helsinki_real_data/
+!runs/helsinki_real_data/prepared/
+!runs/helsinki_real_data/translations/
+!runs/helsinki_real_data/metrics/
+!runs/helsinki_real_data/paper_tables/
+!runs/helsinki_real_data/logs/
+!runs/helsinki_real_data/prepared/**
+!runs/helsinki_real_data/translations/**
+!runs/helsinki_real_data/metrics/**
+!runs/helsinki_real_data/paper_tables/**
+!runs/helsinki_real_data/logs/**
+!runs/nllb_real_data_full/
+!runs/nllb_real_data_full/prepared/
+!runs/nllb_real_data_full/translations/
+!runs/nllb_real_data_full/metrics/
+!runs/nllb_real_data_full/paper_tables/
+!runs/nllb_real_data_full/logs/
+!runs/nllb_real_data_full/prepared/**
+!runs/nllb_real_data_full/translations/**
+!runs/nllb_real_data_full/metrics/**
+!runs/nllb_real_data_full/paper_tables/**
+!runs/nllb_real_data_full/logs/**
+runs/**/models/
+runs/real_data_command_logs/
+
+# Keep final NLLB-ready data but omit local prepare-check duplicate.
+YYQEI_NLLB_ready/runs/nllb_prepare_check/
+YYQEI_NLLB_ready/**/*.pt
+YYQEI_NLLB_ready/**/*.pth
+YYQEI_NLLB_ready/**/*.safetensors
+YYQEI_NLLB_ready/**/models/
+
+# Office/local notes can be kept outside the repo unless explicitly needed.
+~$*
+*.docx
+*.pptx
+*.png
+*.jpg
+*.jpeg
