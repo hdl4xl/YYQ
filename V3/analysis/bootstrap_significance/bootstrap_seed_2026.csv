@@ -1,0 +1,11 @@
+﻿seed,comparison,metric,n,iterations,baseline_score,ours_score,observed_delta,bootstrap_mean_delta,ci_low,ci_high,p_value,significant_p05,delta_direction
+2026,Ours_vs_B2,BLEU,250,5000,17.246,31.2341,13.9881,13.9661,10.5744,17.5415,0.0002,True,ours_minus_baseline
+2026,Ours_vs_B2,chrF,250,5000,44.6706,52.7424,8.0718,8.0569,5.7469,10.3818,0.0002,True,ours_minus_baseline
+2026,Ours_vs_B2,TER,250,5000,68.4659,55.2557,13.2102,13.1889,10.0859,16.3479,0.0002,True,baseline_minus_ours
+2026,Ours_vs_B2,TA,250,5000,32.3529,61.0294,28.6765,28.6863,24.3902,33.0371,0.0002,True,ours_minus_baseline
+2026,Ours_vs_B2,TCR,250,5000,45.5665,77.8325,32.266,29.3919,23.7927,35.0263,0.0002,True,ours_minus_baseline
+2026,Ours_vs_B3,BLEU,250,5000,18.3225,31.2341,12.9116,13.0168,10.5605,15.5683,0.0002,True,ours_minus_baseline
+2026,Ours_vs_B3,chrF,250,5000,43.32,52.7424,9.4224,9.4154,7.7206,11.1852,0.0002,True,ours_minus_baseline
+2026,Ours_vs_B3,TER,250,5000,75.8168,55.2557,20.5611,20.5228,15.0454,27.2045,0.0002,True,baseline_minus_ours
+2026,Ours_vs_B3,TA,250,5000,56.6176,61.0294,4.4118,4.4019,2.1211,6.9802,0.0002,True,ours_minus_baseline
+2026,Ours_vs_B3,TCR,250,5000,71.9212,77.8325,5.9113,4.7587,1.8483,8.0442,0.001,True,ours_minus_baseline

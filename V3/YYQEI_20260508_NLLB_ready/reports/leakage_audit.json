@@ -1,0 +1,8 @@
+{
+  "policy": "Main experiments use terminology_train.csv and entities_model only. terminology_all.csv is kept only for audit/gold metadata.",
+  "test_only_terms": 263,
+  "no_train_terms": 543,
+  "train_table_contains_dev_evidence": 0,
+  "train_table_contains_test_evidence": 0,
+  "model_input_uses_test_only_terms": false
+}

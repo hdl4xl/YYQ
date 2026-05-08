@@ -71,6 +71,11 @@ V1/runs/*_smoke/
 V1/runs/*tcm_experiment*/
 V1/runs/real_data_command_logs/
 
+# V3 statistical experiments: keep scripts/data/metrics, ignore local model artifacts.
+V3/runs/**/models/
+V3/runs/**/checkpoint-*/
+V3/runs/**/trainer_state.json
+
 # Office/local notes can be kept outside the repo unless explicitly needed.
 ~$*
 *.docx

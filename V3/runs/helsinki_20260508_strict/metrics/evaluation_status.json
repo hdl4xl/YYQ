@@ -1,0 +1,54 @@
+﻿{
+  "success": true,
+  "summaries": [
+    {
+      "model_id": "B1_general_translation",
+      "n": 250,
+      "BLEU": 6.7578,
+      "chrF": 27.2359,
+      "TER": 83.5227,
+      "TA": 15.8824,
+      "TCR": 21.6749,
+      "raw_TA": 15.8824,
+      "raw_TCR": 21.6749,
+      "normalization_used": "False"
+    },
+    {
+      "model_id": "B2_domain_adapted",
+      "n": 250,
+      "BLEU": 13.0818,
+      "chrF": 39.5669,
+      "TER": 76.1009,
+      "TA": 30.0,
+      "TCR": 43.3498,
+      "raw_TA": 30.0,
+      "raw_TCR": 43.3498,
+      "normalization_used": "False"
+    },
+    {
+      "model_id": "B3_entity_aware",
+      "n": 250,
+      "BLEU": 10.2387,
+      "chrF": 36.9979,
+      "TER": 73.473,
+      "TA": 44.2647,
+      "TCR": 59.6059,
+      "raw_TA": 44.2647,
+      "raw_TCR": 59.6059,
+      "normalization_used": "False"
+    },
+    {
+      "model_id": "Ours_entity_aware_domain_adapted",
+      "n": 250,
+      "BLEU": 20.1525,
+      "chrF": 44.6517,
+      "TER": 64.4886,
+      "TA": 48.2353,
+      "TCR": 64.7783,
+      "raw_TA": 48.2353,
+      "raw_TCR": 64.7783,
+      "normalization_used": "False"
+    }
+  ],
+  "metrics_path": "D:\\Desktop\\YYQEI\\V2\\runs\\helsinki_20260508_strict\\metrics\\metrics_summary.csv"
+}

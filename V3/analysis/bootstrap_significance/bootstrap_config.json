@@ -1,0 +1,9 @@
+﻿{
+  "seeds": [
+    42,
+    13,
+    2026
+  ],
+  "iterations": 5000,
+  "bootstrap_seed": 20260508
+}
