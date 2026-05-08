@@ -1,6 +1,5 @@
-# YYQEI V1 Historical Archive
+# YYQEI V1 历史版本归档
 
-This directory contains the earlier YYQEI real-data experiment package.
+本目录保存 YYQEI 早期真实数据实验包。
 
-V1 is kept only for traceability. For current paper experiments, use
-[`../V2/`](../V2/).
+V1 仅用于历史追溯。当前论文实验和后续复现应使用 [`../V2/`](../V2/)。

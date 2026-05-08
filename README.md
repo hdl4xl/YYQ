@@ -1,28 +1,25 @@
-# YYQEI TCM Translation Experiment
+# YYQEI 中医术语翻译实验
 
-This repository's current paper package is **V2**. It contains the strict/no-leak
-real-data experiments for Traditional Chinese Medicine Chinese-to-English
-translation.
+本仓库当前正式使用的论文实验包是 **V2**。V2 面向中医基础理论相关的中英翻译任务，包含严格去泄漏后的真实数据、实验脚本、模型输出和评价结果。
 
-## Current Version: V2
+## 当前版本：V2
 
-- Package: [`V2/`](V2/)
-- Data root: [`V2/YYQEI_20260508_NLLB_ready/`](V2/YYQEI_20260508_NLLB_ready/)
-- Strict split: train 990 / dev 249 / test 250
-- Test set size: 250
-- Backbones: `facebook/nllb-200-distilled-600M` and `Helsinki-NLP/opus-mt-zh-en`
-- No-leak policy: train-only terminology for model input; audit-only full terminology
-- Post-hoc `Terminology: ...` normalization is disabled
-- Model checkpoints and the original PDF are excluded from GitHub
+- 实验包：[`V2/`](V2/)
+- 数据目录：[`V2/YYQEI_20260508_NLLB_ready/`](V2/YYQEI_20260508_NLLB_ready/)
+- 严格划分：train 990 / dev 249 / test 250
+- 测试集规模：250 条
+- 对比模型：`facebook/nllb-200-distilled-600M` 与 `Helsinki-NLP/opus-mt-zh-en`
+- 防泄漏策略：模型输入只使用训练集术语；完整术语表仅用于审计和 gold metadata
+- 已禁用后处理式 `Terminology: ...` 术语补词
+- GitHub 包不包含模型 checkpoint、LoRA 权重和原始 PDF
 
-## Results
+## 实验结果
 
-All results below are from the same V2 strict test set. `normalization_used=False`
-for all settings.
+以下结果均来自 V2 的同一个 strict/no-leak 测试集。所有设置均满足 `normalization_used=False`。
 
 ### NLLB-200-distilled-600M
 
-| Setting | BLEU | chrF | TER | TA | TCR |
+| 实验设置 | BLEU | chrF | TER | TA | TCR |
 | --- | ---: | ---: | ---: | ---: | ---: |
 | B1_general_translation | 4.8841 | 25.9489 | 95.8452 | 12.3529 | 16.5025 |
 | B2_domain_adapted | 16.9691 | 43.8895 | 68.8210 | 31.6176 | 44.0887 |
@@ -31,14 +28,14 @@ for all settings.
 
 ### Helsinki-NLP/opus-mt-zh-en
 
-| Setting | BLEU | chrF | TER | TA | TCR |
+| 实验设置 | BLEU | chrF | TER | TA | TCR |
 | --- | ---: | ---: | ---: | ---: | ---: |
 | B1_general_translation | 6.7578 | 27.2359 | 83.5227 | 15.8824 | 21.6749 |
 | B2_domain_adapted | 13.0818 | 39.5669 | 76.1009 | 30.0000 | 43.3498 |
 | B3_entity_aware | 10.2387 | 36.9979 | 73.4730 | 44.2647 | 59.6059 |
 | Ours_entity_aware_domain_adapted | 20.1525 | 44.6517 | 64.4886 | 48.2353 | 64.7783 |
 
-## Quick Start
+## 快速验证
 
 ```powershell
 cd V2
@@ -46,7 +43,7 @@ cd V2
 & 'D:\Anaconda\Scripts\conda.exe' run -n YYQEI python .\run_02_check_env.py
 ```
 
-Run the full experiments:
+运行完整实验：
 
 ```powershell
 cd V2
@@ -54,9 +51,9 @@ cd V2
 & 'D:\Anaconda\Scripts\conda.exe' run -n YYQEI python .\run_11_run_helsinki.py
 ```
 
-## Versions
+## 版本说明
 
-- [`V2/`](V2/): current recommended package for the paper experiment.
-- [`V1/`](V1/): historical archive of the earlier package.
+- [`V2/`](V2/)：当前推荐版本，用于论文实验和后续复现。
+- [`V1/`](V1/)：历史版本归档，仅用于追溯早期实验。
 
-For new experiments, use `V2/`.
+后续新实验应以 `V2/` 为准。
