@@ -1,0 +1,13 @@
+﻿check,status,detail
+required_sheets_present,PASS,"Train BIO,Dev BIO,Test BIO"
+row_counts,PASS,"{'train': 1000, 'dev': 250, 'test': 250}"
+unique_ids,PASS,1500 unique / 1500 rows
+spans_json_parseable,PASS,all parseable
+span_boundaries_and_text,PASS,all spans match zh text
+no_overlapping_spans,PASS,no overlaps
+valid_bio_transitions,PASS,all I-* follow same entity
+b_label_equals_span_count,PASS,"B labels=3620, spans=3620"
+matches_original_train_dev_test,PASS,mismatches=0
+total_sentences,PASS,1500
+total_spans,PASS,3620
+total_char_rows,PASS,18549

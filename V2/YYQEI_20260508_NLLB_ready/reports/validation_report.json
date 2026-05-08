@@ -1,0 +1,70 @@
+{
+  "source_root": "D:\\Desktop\\YYQEI\\5.8\\source_materials",
+  "ready_root": "D:\\Desktop\\YYQEI\\5.8\\YYQEI_20260508_NLLB_ready",
+  "data_full_counts": {
+    "train": 1000,
+    "dev": 250,
+    "test": 250
+  },
+  "data_strict_counts": {
+    "train": 990,
+    "dev": 249,
+    "test": 250
+  },
+  "strict_removed_ids": [
+    "TCM_DEV_0248",
+    "TCM_TRAIN_0194",
+    "TCM_TRAIN_0258",
+    "TCM_TRAIN_0320",
+    "TCM_TRAIN_0833",
+    "TCM_TRAIN_0837",
+    "TCM_TRAIN_0849",
+    "TCM_TRAIN_0857",
+    "TCM_TRAIN_0859",
+    "TCM_TRAIN_0967",
+    "TCM_TRAIN_0979"
+  ],
+  "strict_removed_count": 11,
+  "missing_values_full": {},
+  "duplicate_id_full": 0,
+  "duplicate_zh_full": 0,
+  "duplicate_en_full": 0,
+  "duplicate_zh_norm_full": 0,
+  "duplicate_en_norm_full": 2,
+  "duplicate_id_strict": 0,
+  "duplicate_zh_strict": 0,
+  "duplicate_en_strict": 0,
+  "duplicate_zh_norm_strict": 0,
+  "duplicate_en_norm_strict": 0,
+  "terminology_all_rows": 1828,
+  "terminology_train_rows": 1285,
+  "single_char_terms_all": 70,
+  "single_char_terms_train": 61,
+  "entity_summary": {
+    "train": {
+      "gold_occurrences": 2422,
+      "model_occurrences": 2399,
+      "eval_occurrences": 2289,
+      "rows_with_model_entities": 1000,
+      "rows_all_gold_are_model_entities": 978,
+      "rows_all_gold_are_eval_entities": 883
+    },
+    "dev": {
+      "gold_occurrences": 620,
+      "model_occurrences": 315,
+      "eval_occurrences": 498,
+      "rows_with_model_entities": 194,
+      "rows_all_gold_are_eval_entities": 140,
+      "rows_all_gold_are_model_entities": 48
+    },
+    "test": {
+      "gold_occurrences": 881,
+      "model_occurrences": 431,
+      "eval_occurrences": 680,
+      "rows_with_model_entities": 226,
+      "rows_all_gold_are_eval_entities": 98,
+      "rows_all_gold_are_model_entities": 19
+    }
+  },
+  "type_map_issues": []
+}
