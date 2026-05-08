@@ -24,6 +24,8 @@ __pycache__/
 # Original/synthetic intermediate materials
 generated_materials/
 YYQEI_Materials_cleaned/
+5.8/
+2026.5.8-Real Materials/
 runs/*
 
 # Keep final real-data experiment outputs, excluding model weights/checkpoints.
@@ -59,6 +61,15 @@ YYQEI_NLLB_ready/**/*.pt
 YYQEI_NLLB_ready/**/*.pth
 YYQEI_NLLB_ready/**/*.safetensors
 YYQEI_NLLB_ready/**/models/
+
+# V1 historical archive: keep tracked files, ignore local heavy or temporary artifacts.
+V1/YYQEI_NLLB_ready/runs/nllb_prepare_check/
+V1/runs/**/models/
+V1/runs/**/checkpoint-*/
+V1/runs/*_logs/
+V1/runs/*_smoke/
+V1/runs/*tcm_experiment*/
+V1/runs/real_data_command_logs/
 
 # Office/local notes can be kept outside the repo unless explicitly needed.
 ~$*
