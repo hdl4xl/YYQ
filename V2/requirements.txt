@@ -1,0 +1,13 @@
+# Install PyTorch separately for your CUDA or CPU target:
+# https://pytorch.org/get-started/locally/
+transformers==4.57.6
+datasets==4.5.0
+peft==0.17.1
+accelerate==1.10.1
+sacrebleu==2.6.0
+sentencepiece==0.2.1
+sacremoses==0.1.1
+pandas==2.3.3
+numpy>=1.24
+huggingface-hub>=0.20
+openpyxl>=3.1
